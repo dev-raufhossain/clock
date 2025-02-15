@@ -1,9 +1,9 @@
 const hourHand = document.querySelector ('.hour-hand');
-        const minuteHand = document.querySelector ('minute-hand');
-        const secondHand = document.querySelector('second-hand');
+        const minuteHand = document.querySelector ('.minute-hand');
+        const secondHand = document.querySelector('.second-hand');
       
         function setClock() {
-          const now = new Data();
+          const now = new Date();
           const seconds = now.getSeconds();
           const secondsDegrees = ((second/60)* 360) + 90;
           secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
